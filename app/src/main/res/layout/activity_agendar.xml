@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.gabri.medicalschedule.AgendarActivity">
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/linearLayout"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="22dp"
+            android:text="Agende sua Consulta"
+            android:textAppearance="@style/Base.TextAppearance.AppCompat.Large" />
+
+        <EditText
+            android:id="@+id/txtNome"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:hint="Digite seu nome completo" />
+
+        <EditText
+            android:id="@+id/txtFone"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:hint="Digite um telefone valido"
+            android:inputType="phone" />
+
+        <EditText
+            android:id="@+id/txtData"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:hint="Data desejada"
+            android:inputType="datetime" />
+
+        <Button
+            android:id="@+id/btnSalvar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Agendar" />
+
+        <Button
+            android:id="@+id/btnSair"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Sair" />
+
+    </LinearLayout>
+
+
+</RelativeLayout>

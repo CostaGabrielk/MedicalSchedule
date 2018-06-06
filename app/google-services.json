@@ -1,0 +1,59 @@
+{
+  "project_info": {
+    "project_number": "1005516886973",
+    "firebase_url": "https://medicalschedule-53d2a.firebaseio.com",
+    "project_id": "medicalschedule-53d2a",
+    "storage_bucket": "medicalschedule-53d2a.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1005516886973:android:190d64bc2bdc197d",
+        "android_client_info": {
+          "package_name": "com.example.gabri.medicalschedule"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1005516886973-6hfgmh2ahugq70cuciq8te6bu004etc9.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.gabri.medicalschedule",
+            "certificate_hash": "3c36ca022a3193ba4b89992e278b20f963264460"
+          }
+        },
+        {
+          "client_id": "1005516886973-qld038riqjknmtshhgc386em1t645uj8.apps.googleusercontent.com",
+          "client_type": 3
+        },
+        {
+          "client_id": "1005516886973-qld038riqjknmtshhgc386em1t645uj8.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyD2V0qncRRaDtkuMffdeNABXrq68YrUVII"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1005516886973-qld038riqjknmtshhgc386em1t645uj8.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
