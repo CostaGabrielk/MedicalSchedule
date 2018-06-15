@@ -1,3 +1,9 @@
 <resources>
     <string name="app_name">MedicalSchedule</string>
+
+    <array name="medicos">
+        <item>Drª Luara Rocha</item>
+        <item>Drª Natany Rocha</item>
+        <item>Drª Cristina de Falco</item>
+    </array>
 </resources>

@@ -20,7 +20,10 @@
         </activity>
         <activity android:name=".CadastrarActivity" />
         <activity android:name=".MainActivity" />
-        <activity android:name=".AgendarActivity"></activity>
+        <activity android:name=".AgendarActivity" />
+        <activity android:name=".Agendar2Activity" />
+        <activity android:name=".ConsultarActivity" />
+        <activity android:name=".AlterarActivity"></activity>
     </application>
 
 </manifest>

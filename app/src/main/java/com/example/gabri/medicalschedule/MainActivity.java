@@ -15,8 +15,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
     private FirebaseAuth firebaseAuth;
     private Button buttonAgendar;
     private Button buttonConsultar;
-    private Button buttonAlterar;
-    private Button buttonExcluir;
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -33,15 +32,14 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
 
         buttonSair = (Button) findViewById(R.id.btnSair);
         buttonAgendar = (Button) findViewById(R.id.btnAgendar);
-        buttonConsultar = (Button) findViewById(R.id.btnAlterar);
-        buttonAlterar = (Button) findViewById(R.id.btnAlterar);
-        buttonExcluir = (Button) findViewById(R.id.btnExcluir);
+        buttonConsultar = (Button) findViewById(R.id.btnConsultar);
+
+
 
         buttonSair.setOnClickListener(this);
         buttonAgendar.setOnClickListener(this);
         buttonConsultar.setOnClickListener(this);
-        buttonAlterar.setOnClickListener(this);
-        buttonExcluir.setOnClickListener(this);
+
     }
 
     @Override
@@ -55,21 +53,16 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
 
         if (view == buttonAgendar) {
             finish();
-            startActivity(new Intent(this, AgendarActivity.class));
+            startActivity(new Intent(this, Agendar2Activity.class));
 
         }
 
         if (view == buttonConsultar) {
+            finish();
+            startActivity(new Intent(this, ConsultarActivity.class));
 
         }
 
-        if (view == buttonAlterar) {
-
-        }
-
-        if (view == buttonExcluir) {
-
-        }
 
     }
 }

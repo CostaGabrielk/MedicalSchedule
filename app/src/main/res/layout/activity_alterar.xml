@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="com.example.gabri.medicalschedule.AgendarActivity">
+    tools:context="com.example.gabri.medicalschedule.ConsultarActivity">
 
     <LinearLayout
         android:id="@+id/linearLayout"
@@ -14,28 +14,27 @@
         android:orientation="vertical">
 
         <TextView
-            android:id="@+id/textView"
+            android:id="@+id/txtNomePaciente"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_below="@+id/linearLayout"
             android:layout_centerHorizontal="true"
-            android:layout_marginTop="22dp"
-            android:text="Agende sua Consulta"
-            android:textAppearance="@style/Base.TextAppearance.AppCompat.Large" />
+            android:layout_marginTop="10dp"
+            android:textAppearance="@style/Base.TextAppearance.AppCompat.Medium" />
 
         <EditText
             android:id="@+id/txtNome"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_margin="10dp"
-            android:hint="Digite seu nome completo" />
+            android:hint="Digite o novo nome" />
 
         <EditText
             android:id="@+id/txtFone"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_margin="10dp"
-            android:hint="Digite um telefone valido"
+            android:hint="Digite o novo Telefone"
             android:inputType="phone" />
 
         <EditText
@@ -43,15 +42,14 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_margin="10dp"
-            android:hint="Data desejada"
+            android:hint="Digite a nova data"
             android:inputType="datetime" />
 
         <TextView
-            android:layout_margin="10dp"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Selecione o Medico desejado:"
-             />
+            android:layout_margin="10dp"
+            android:text="Selecione o novo Medico desejado:" />
 
         <Spinner
             android:id="@+id/opcMedicos"
@@ -59,19 +57,23 @@
             android:layout_height="wrap_content"
             android:entries="@array/medicos" />
 
-        <Button
-            android:id="@+id/btnSalvar"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="Agendar" />
-
-        <Button
-            android:id="@+id/btnVoltar"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Voltar" />
-
     </LinearLayout>
 
+    <Button
+        android:id="@+id/btnAlterar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/linearLayout"
+        android:layout_toStartOf="@+id/btnDeletar"
+        android:text="Alterar" />
+
+    <Button
+        android:id="@+id/btnDeletar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_below="@+id/linearLayout"
+        android:layout_marginEnd="108dp"
+        android:text="Deletar" />
 
 </RelativeLayout>
