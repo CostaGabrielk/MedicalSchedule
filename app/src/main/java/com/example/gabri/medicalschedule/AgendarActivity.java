@@ -62,7 +62,7 @@ public class AgendarActivity extends AppCompatActivity implements View.OnClickLi
 
         databaseReference.child(user.getUid()).setValue(dadosUsuario);
 
-        Toast.makeText(this, "Consulta Agendada. Em breve entraremos em contato...", Toast.LENGTH_LONG).show();
+        Toast.makeText(this, "Consulta Agendada com sucesso", Toast.LENGTH_LONG).show();
         finish();
         startActivity(new Intent(this, MainActivity.class));
     }

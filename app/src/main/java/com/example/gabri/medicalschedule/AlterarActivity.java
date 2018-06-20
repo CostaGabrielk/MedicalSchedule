@@ -1,9 +1,11 @@
 package com.example.gabri.medicalschedule;
 
 import android.content.Intent;
+import android.support.v7.app.AlertDialog;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.text.TextUtils;
+import android.view.LayoutInflater;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
@@ -102,6 +104,16 @@ public class AlterarActivity extends AppCompatActivity implements View.OnClickLi
 
         if (view == buttonDeletar) {
 
+            DatabaseReference databaseReference = FirebaseDatabase.getInstance().getReference("consultas").child(consultaId);
+            databaseReference.removeValue();
+
+            Toast.makeText(this, "Consulta apagada com sucesso", Toast.LENGTH_LONG).show();
+
+            finish();
+
         }
     }
+
+
 }
+
